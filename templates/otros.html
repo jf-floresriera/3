@@ -18,7 +18,18 @@
         <li><strong>Precios:</strong> Desde $120.000.000</li>
         <li><strong>Opciones:</strong> Nuevos, usados, para inversión o vivienda</li>
       </ul>
-
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header>
+    <h1>Portal Inmobiliario</h1>
+    <nav>
+      <a href="{{ url_for('inicio') }}">Inicio</a>
+      <a href="{{ url_for('miraflores') }}">Miraflores</a>
+      <a href="{{ url_for('cachipay') }}">Cachipay</a>
+      <a href="{{ url_for('loteo') }}">Loteo</a>
+      <a href="{{ url_for('otros') }}">Otros</a>
+      <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
+  </header>
       <div class="media-gallery">
         <img src="../static/images/otros1.jpeg" alt="Proyecto 1">
         <img src="../static/images/otros2.jpeg" alt="Proyecto 2">
