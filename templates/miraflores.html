@@ -1,1 +1,71 @@
-<h1>Proyecto Miraflores</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Miraflores</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header>
+    <h1>Portal Inmobiliario</h1>
+    <nav>
+      <a href="{{ url_for('inicio') }}">Inicio</a>
+      <a href="{{ url_for('miraflores') }}">Miraflores</a>
+      <a href="{{ url_for('cachipay') }}">Cachipay</a>
+      <a href="{{ url_for('loteo') }}">Loteo</a>
+      <a href="{{ url_for('otros') }}">Otros</a>
+      <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO DEL PROYECTO MIRAFLORES -->
+  <section class="section">
+    <div class="project-detail">
+      <h1>Proyecto Miraflores</h1>
+      <p>
+        Miraflores es un exclusivo proyecto inmobiliario ubicado en una zona campestre de alta valorización. Esta propiedad ofrece una combinación ideal entre naturaleza y confort moderno. Cuenta con un diseño inteligente de dos niveles, rodeado de jardines exteriores, senderos ecológicos y áreas sociales premium.
+        Con una construcción de 145 m² sobre un terreno de 160 m², la vivienda incluye tres amplias habitaciones, cinco baños, cocina integral, estudio, y sala-comedor conectada a un generoso patio interno perfecto para reuniones familiares. Las zonas comunes incluyen piscina, sauna, gimnasio, juegos infantiles, zona BBQ, salón social, cancha múltiple y seguridad 24/7.
+        Además, su cercanía a colegios de alto nivel, centros comerciales y rutas principales hacen de este proyecto una excelente inversión. Es el hogar ideal para quienes buscan bienestar, naturaleza y comodidad.
+      </p>
+
+      <ul class="features">
+        <li><strong>Precio:</strong> $1.200.000.000</li>
+        <li><strong>Área construida:</strong> 145 m²</li>
+        <li><strong>Área total:</strong> 160 m²</li>
+        <li><strong>Habitaciones:</strong> 3</li>
+        <li><strong>Baños:</strong> 5</li>
+        <li><strong>Parqueaderos:</strong> 2</li>
+        <li><strong>Estrato:</strong> 6</li>
+        <li><strong>Año de construcción:</strong> 2020</li>
+      </ul>
+
+      <div class="media-gallery">
+        <img src="{{ url_for('static', filename='images/miraflores1.jpeg') }}" alt="Miraflores Imagen 1">
+        <img src="{{ url_for('static', filename='images/miraflores2.jpeg') }}" alt="Miraflores Imagen 2">
+        <img src="{{ url_for('static', filename='images/miraflores3.jpeg') }}" alt="Miraflores Imagen 3">
+        <video controls>
+          <source src="{{ url_for('static', filename='videos/miraflores.mp4') }}" type="video/mp4">
+          Tu navegador no soporta video.
+        </video>
+      </div>
+
+      <a href="https://wa.me/573188738163" class="card-btn">Contáctanos por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/573188738163" class="whatsapp-button" title="¡Contáctanos por WhatsApp!">
+    <img src="{{ url_for('static', filename='images/whatsapp-icon.png') }}" alt="WhatsApp" width="28" height="28">
+  </a>
+  <div class="whatsapp-label">¡Escríbenos!</div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    &copy; 2025 Portal Inmobiliario. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
