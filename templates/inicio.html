@@ -2,44 +2,84 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portal Inmobiliario</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <link rel="icon" href="{{ url_for('static', filename='icon.ico') }}" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Inmobiliario - Inicio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
   <header>
-    <img src="{{ url_for('static', filename='header.png') }}" alt="Logo" class="logo">
     <h1>Portal Inmobiliario</h1>
+    <nav>
+      <a href="{{ url_for('inicio') }}">Inicio</a>
+      <a href="{{ url_for('miraflores') }}">Miraflores</a>
+      <a href="{{ url_for('cachipay') }}">Cachipay</a>
+      <a href="{{ url_for('loteo') }}">Loteo</a>
+      <a href="{{ url_for('otros') }}">Otros</a>
+      <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
   </header>
 
-  <section class="card intro-card">
-    <h2>¿Quiénes somos?</h2>
-    <p>Somos una empresa familiar que prioriza las necesidades del cliente, ofreciendo un trato cercano, personalizado y eficaz. Nuestra visión es transformar el acceso a la finca raíz mediante un servicio transparente, humano y de calidad.</p>
+  <!-- SECCIÓN INSTITUCIONAL -->
+  <section class="section about">
+    <div class="about-card">
+      <h2>¿Quiénes somos?</h2>
+      <p><strong>Portal Inmobiliario</strong> es una empresa familiar dedicada al sector de finca raíz, enfocada en brindar soluciones efectivas y personalizadas para quienes desean comprar, vender o invertir en bienes raíces.</p>
+      <p>Nos caracteriza un trato cálido, el respeto por la confianza depositada y una atención basada en la transparencia y acompañamiento constante durante todo el proceso de adquisición.</p>
+      <h3>Visión</h3>
+      <p>Ser reconocidos a nivel regional como una inmobiliaria confiable, moderna y cercana, que combina la tecnología con un enfoque humano.</p>
+      <h3>Objetivos</h3>
+      <ul>
+        <li>Asesoría integral en todos los procesos inmobiliarios.</li>
+        <li>Acompañamiento desde el primer contacto hasta el cierre.</li>
+        <li>Impulsar proyectos con valorización y bienestar.</li>
+        <li>Fortalecer relaciones a largo plazo con nuestros clientes.</li>
+      </ul>
+    </div>
   </section>
 
-  <div class="cards">
-    <a href="/miraflores" class="card animated-card">
-      <h3>Miraflores</h3>
-    </a>
-    <a href="/cachapay" class="card animated-card">
-      <h3>Cachapay</h3>
-    </a>
-    <a href="/loteo" class="card animated-card">
-      <h3>Loteo</h3>
-    </a>
-    <a href="/contacto" class="card animated-card">
-      <h3>Contacto</h3>
-    </a>
-    <a href="/otros" class="card animated-card">
-      <h3>Otros</h3>
-    </a>
-  </div>
+  <!-- TARJETAS DE PROYECTOS -->
+  <section class="section cards">
+    <div class="card-grid">
+      <div class="project-card">
+        <h3>Miraflores</h3>
+        <p>Proyecto residencial moderno, cómodo y elegante.</p>
+        <a href="{{ url_for('miraflores') }}" class="card-btn">Ver más</a>
+      </div>
+      <div class="project-card">
+        <h3>Cachipay</h3>
+        <p>Casas campestres en entorno natural privilegiado.</p>
+        <a href="{{ url_for('cachipay') }}" class="card-btn">Ver más</a>
+      </div>
+      <div class="project-card">
+        <h3>Loteo</h3>
+        <p>Oportunidades de inversión en lotes urbanizados.</p>
+        <a href="{{ url_for('loteo') }}" class="card-btn">Ver más</a>
+      </div>
+      <div class="project-card">
+        <h3>Otros proyectos</h3>
+        <p>Explora todas nuestras opciones inmobiliarias disponibles.</p>
+        <a href="{{ url_for('otros') }}" class="card-btn">Ver más</a>
+      </div>
+      <div class="project-card">
+        <h3>Contacto</h3>
+        <p>¿Tienes dudas o quieres agendar una visita?</p>
+        <a href="{{ url_for('contacto') }}" class="card-btn">Ir a contacto</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="whatsapp-button">
-    <a href="https://wa.me/573188738163" target="_blank" title="Contáctanos por WhatsApp">
-      <img src="{{ url_for('static', filename='whatsapp-icon.png') }}" alt="WhatsApp" />
-    </a>
-  </div>
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a href="https://wa.me/573188738163" class="whatsapp-button" title="¡Contáctanos por WhatsApp!">
+    <img src="{{ url_for('static', filename='images/whatsapp-icon.png') }}" alt="WhatsApp" width="28" height="28">
+  </a>
+  <div class="whatsapp-label">¡Escríbenos!</div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    &copy; 2025 Portal Inmobiliario. Todos los derechos reservados.
+  </footer>
+
 </body>
 </html>
