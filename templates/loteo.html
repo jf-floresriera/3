@@ -19,7 +19,19 @@
         <li><strong>Precio:</strong> Desde $45.000.000</li>
         <li><strong>Servicios:</strong> Agua, energía, alcantarillado</li>
       </ul>
-
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header>
+    <h1>Portal Inmobiliario</h1>
+    <nav>
+      <a href="{{ url_for('inicio') }}">Inicio</a>
+      <a href="{{ url_for('miraflores') }}">Miraflores</a>
+      <a href="{{ url_for('cachipay') }}">Cachipay</a>
+      <a href="{{ url_for('loteo') }}">Loteo</a>
+      <a href="{{ url_for('otros') }}">Otros</a>
+      <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
+  </header>
+      
       <div class="media-gallery">
         <img src="../static/images/loteo1.jpeg" alt="Loteo 1">
         <img src="../static/images/loteo2.jpeg" alt="Loteo 2">
