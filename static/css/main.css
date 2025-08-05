@@ -154,3 +154,36 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.project-detail {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail ul.features {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.project-detail ul.features li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.media-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin: 30px 0;
+}
+
+.media-gallery img,
+.media-gallery video {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
