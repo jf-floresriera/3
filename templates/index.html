@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal Inmobiliario</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.ico') }}" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <img src="{{ url_for('static', filename='header.png') }}" alt="Logo" class="logo">
+    <h1>Portal Inmobiliario</h1>
+  </header>
+
+  <section class="card intro-card">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos una empresa familiar que prioriza las necesidades del cliente, ofreciendo un trato cercano, personalizado y eficaz. Nuestra visión es transformar el acceso a la finca raíz mediante un servicio transparente, humano y de calidad.</p>
+  </section>
+
+  <div class="cards">
+    <a href="/miraflores" class="card animated-card">
+      <h3>Miraflores</h3>
+    </a>
+    <a href="/cachapay" class="card animated-card">
+      <h3>Cachapay</h3>
+    </a>
+    <a href="/loteo" class="card animated-card">
+      <h3>Loteo</h3>
+    </a>
+    <a href="/contacto" class="card animated-card">
+      <h3>Contacto</h3>
+    </a>
+    <a href="/otros" class="card animated-card">
+      <h3>Otros</h3>
+    </a>
+  </div>
+
+  <div class="whatsapp-button">
+    <a href="https://wa.me/573188738163" target="_blank" title="Contáctanos por WhatsApp">
+      <img src="{{ url_for('static', filename='whatsapp-icon.png') }}" alt="WhatsApp" />
+    </a>
+  </div>
+</body>
+</html>
