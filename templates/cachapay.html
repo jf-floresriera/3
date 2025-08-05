@@ -26,7 +26,19 @@
         <li><strong>Entorno:</strong> Natural, ecológico, tranquilo</li>
         <li><strong>Estado:</strong> Nuevo</li>
       </ul>
-
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header>
+    <h1>Portal Inmobiliario</h1>
+    <nav>
+      <a href="{{ url_for('inicio') }}">Inicio</a>
+      <a href="{{ url_for('miraflores') }}">Miraflores</a>
+      <a href="{{ url_for('cachipay') }}">Cachipay</a>
+      <a href="{{ url_for('loteo') }}">Loteo</a>
+      <a href="{{ url_for('otros') }}">Otros</a>
+      <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
+  </header>
+      
       <div class="media-gallery">
         <img src="../static/images/cachapay1.png" alt="Cachipay Imagen 1">
         <img src="../static/images/cachapay2.png" alt="Cachipay Imagen 2">
