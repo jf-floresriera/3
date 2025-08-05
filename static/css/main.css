@@ -187,3 +187,20 @@ footer {
     border-radius: 12px;
     object-fit: cover;
 }
+.contact-btn {
+    display: inline-block;
+    background-color: #25D366; /* verde WhatsApp */
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #1ebe5d; /* tono más oscuro al pasar el mouse */
+}
+
